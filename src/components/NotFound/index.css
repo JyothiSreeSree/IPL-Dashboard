@@ -1,0 +1,29 @@
+.pageNotFoundBg {
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png');
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+.pageNotFoundTitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ff0b37;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .pageNotFoundTitle {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pageNotFoundTitle {
+    font-size: 24px;
+  }
+}

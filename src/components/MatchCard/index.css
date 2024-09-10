@@ -1,0 +1,89 @@
+.matchCardContainer {
+  list-style-type: none;
+  padding: 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.matchCardContainer:hover {
+  transform: scale(1.05);
+}
+
+.competingTeamLogo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.competingTeamName {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c364c;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* Match result */
+.matchResult {
+  font-size: 16px;
+  color: #475569;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.matchStatus {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.matchWon {
+  color: #4f46e5;
+}
+
+.matchLost {
+  color: #ff0b37;
+}
+
+@media (max-width: 768px) {
+  .matchCardContainer {
+    padding: 15px;
+  }
+
+  .competingTeamLogo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .competingTeamName,
+  .matchResult,
+  .matchStatus {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .matchCardContainer {
+    padding: 10px;
+  }
+
+  .competingTeamLogo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .competingTeamName,
+  .matchResult,
+  .matchStatus {
+    font-size: 14px;
+  }
+}

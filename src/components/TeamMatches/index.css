@@ -1,0 +1,55 @@
+.teamMatchesContainer {
+  padding: 20px;
+  background-color: #f1f5f9;
+  min-height: 100vh;
+}
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bannerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.teamBanner {
+  width: 80%;
+  max-width: 900px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.recentMatchesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (max-width: 768px) {
+  .teamBanner {
+    width: 90%;
+  }
+
+  .recentMatchesList {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .teamBanner {
+    width: 100%;
+  }
+
+  .recentMatchesList {
+    flex-direction: column;
+    align-items: center;
+  }
+}
